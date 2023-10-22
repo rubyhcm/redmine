@@ -3,17 +3,17 @@ default: &default
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-development:
-  <<: *default
-  database: redmine
+# development:
+#   <<: *default
+#   database: redmine
 
-#development:
+# development:
 #  <<: *default
 #  url: <%#= ENV['DATABASE_URL'] %>
 
-test:
-  <<: *default
-  database: redmine_test
+# test:
+#   <<: *default
+#   database: redmine_test
 
 production:
   <<: *default

@@ -96,3 +96,4 @@ Dir.glob File.expand_path("../plugins/*/{Gemfile,PluginGemfile}", __FILE__) do |
 end
 
 gem 'puma'
+gem 'dotenv-rails', groups: [:development, :test]
